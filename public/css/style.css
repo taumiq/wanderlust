@@ -1,0 +1,346 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+
+/* Navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* .search{
+    width: 500px;
+    outline: none;
+    padding: 8px 12px;
+    border: 2px solid #fe424d;
+    border-radius: 16px;
+}
+
+.search-btn{
+    background-color: #fe424d;
+    color: white;
+    border: none;
+    font-size: 1.15rem;
+    padding: 8px 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin-left: -40px;
+
+} */
+
+.collapse{
+    background-color: white;
+}
+
+.explore{
+    font-weight: 500 !important;
+}
+.wander{
+    color: #fe424d !important;
+    font-weight: 500 !important;
+    margin-right: 1rem;
+    opacity: 0.8;
+}
+.wander:hover{
+    opacity: 1;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+/* #filters{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.filters{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.filter{
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    opacity: 0.7;
+}
+.filter:hover{
+    color: #fe424d !important;
+    opacity: 1;
+    cursor: pointer;
+}
+.filter p{
+    font-size: 0.8rem;
+} */
+
+/* .tax-toggle{
+    border: 2px solid #676767;
+    padding: 0.6rem 0.6rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    margin-right: 5rem;
+    font-size: 1rem;
+} */
+
+.form-check-input, .form-check-label{
+    cursor: pointer !important;
+}
+
+/* .tax-info{
+    display: none;
+} */
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+
+/* Footer */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-socials a i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info-socials a i:hover{
+    cursor: pointer;
+    color: #fe424d;
+    transform: scale(1.5);
+}
+
+
+.f-info{
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+
+
+/* Cards */
+.listing-card{
+    border: none !important; 
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+
+/* Card Effect */
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New Page, Edit Page*/
+.add-btn, .edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show Page */
+.show-img{
+    height: 30vh;
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* Map */
+#map { 
+    height: 400px;
+    width: 95vh;
+    border: dashed;
+    border-width: 1px 3px;
+    border-radius: 20px;
+    box-shadow:
+    
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgb(254 66 77/ 90%);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+ }
+
+ .sign-btn{
+    font-size: 0.8rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 2px 12px !important;
+}
+
+.signup-btn{
+    background-color: #fe424d !important;
+    color: white !important;
+}
+
+.login-btn{
+    border: 1px solid #fe424d !important;
+    color: #fe424d !important;
+}
+
+
+
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 7px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e63337;
+    border-radius: 7px;
+  }
+
+
+  .outer{
+   
+    
+
+
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for visual effect */
+
+}
+
+  @media screen and (max-width: 768px) {
+    
+    /* #filters {
+        flex-direction: column;
+        justify-content: center;
+        overflow-x: scroll;
+    }
+    #filters::-webkit-scrollbar{
+        display: none;
+    }
+    .tax-toggle{
+        margin-right: 0;
+        /* margin-top: px; 
+    } */
+    .card-img-top{
+        width: 80%;
+        /* height: 15rem; */
+    }
+
+    .review-box{
+        width: 150px; /* Makes the review box take full width */ /* Center the review box */
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for visual effect */
+        border-radius: 5px; 
+    }
+
+    .outer{
+        width: 180px !important;
+        
+
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for visual effect */
+    border-radius: 5px; /* Optional: Rounds the corners */
+    }
+
+    #map{
+        height: 200px;
+        width: 200px;
+    }
+    .collapse{
+        text-align: center;
+    }
+    .search{
+        width: 80%;
+    }
+    .search-btn{
+        display: none;
+    }
+    .sign-btn{
+        width: 80%;
+        margin-inline: auto;
+    }
+    .dlt-btn{
+        margin-left: 0;
+    }
+    .buttons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
+}
+
+
+
+
+
+
