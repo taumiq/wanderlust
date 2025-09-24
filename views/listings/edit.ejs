@@ -1,0 +1,97 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row mt-3">
+    <div class="col-8 offset-2">
+    <h3>Edit your Listing</h3>
+    <form method="POST" action="/listings/<%=listing._id%>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="mb-3 mt-3">
+            <label for="title" class="form-label">Title</label>
+            <input name="listing[title]" value="<%=listing.title%>" type="text" class="form-control" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="listing[description]" class="form-control" required><%=listing.description%></textarea>
+            <div class="invalid-feedback">
+                Please enter a short description.
+              </div>
+        </div>
+        
+        <div class="mb-3">
+            Initial Listing Image <br>
+            <img src="<%= originalImageUrl %>" >
+        </div>
+
+        <div class="mb-3">
+            <label for="image" class="form-label">New Image &nbsp;&nbsp;<i style="color: #fe424d; font-family:Arial, Helvetica, sans-serif; font-size:small;">(Please ensure the file is a JPG, JPEG, or PNG and does not exceed 10MB)</i></label>
+            <input name="listing[image]" type="file" class="form-control">
+        </div>
+        
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="price" class="form-label">Price</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">&#8377;</span>
+                    <input name="listing[price]" value="<%=listing.price%>" type="number" class="form-control" min="0" required>
+                    <div class="invalid-feedback">
+                        Please enter a price.
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="mb-3 col-md-8">
+                <label for="country" class="form-label">Country</label>
+                <input name="listing[country]" value="<%=listing.country%>" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Please provide a valid country.
+                  </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="location" class="form-label">Location</label>
+                <input name="listing[location]" value="<%=listing.location%>" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Please provide a valid location.
+                  </div>
+            </div>
+            <div class="m-b3">
+                <label for="category" class="form-label">Choose from categories&nbsp;&nbsp;<i style="color: #fe424d; font-family:Arial, Helvetica, sans-serif; font-size:small;">(Click to pick one option; press Ctrl and Click to pick several)</i></label>
+                <select id="category" name="listing[category]"
+                    class="form-select border border-black border-opacity-50 mb-2" multiple
+                    style="font-size: .95rem;">
+                    <option value="Trending">Trending</option>
+                    <option value="Beachfront">Beachfront</option>
+                    <option value="Cabins">Cabins</option>
+                    <option value="Omg">OMG</option>
+                    <option value="Lake">Lake</option>
+                    <option value="Design">Design</option>
+                    <option value="Amazing Pools">Amazing pools</option>
+                    <option value="Farms">Farms</option>
+                    <option value="Amazing Views">Amazing views</option>
+                    <option value="Rooms">Rooms</option>
+                    <option value="Lakefront">Lakefront</option>
+                    <option value="Tiny Homes">Tiny homes</option>
+                    <option value="Countryside">Countryside</option>
+                    <option value="Treehouse">Treehouse</option>
+                    <option value="Tropical">Tropical</option>
+                    <option value="National Parks">National parks</option>
+                    <option value="Castles">Castles</option>
+                    <option value="Camping">Camping</option>
+                    <option value="Top Of The World">Top of the world</option>
+                    <option value="Luxe">Luxe</option>
+                    <option value="Iconic Cities">Iconic cities</option>
+                    <option value="Earth Homes">Earth homes</option>
+                </select>
+                <div class="invalid-feedback">Kindly choose the appropriate category.</div>
+            </div>
+                
+        </div>
+        <button class="btn btn-dark edit-btn mt-3 mb-3">Save</button>
+    </form>
+</div>
+</div>
